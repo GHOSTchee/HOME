@@ -38,7 +38,8 @@ body {
 }
 
 .card[data-state="#about"] {
-  height: 450px;
+  height: 425px;
+
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
@@ -49,7 +50,12 @@ body {
 }
 
 .card[data-state="#experience"] {
-  height: 550px;
+  height: 520px;
+}
+
+.card[data-state="#Capture"] {
+  width: 425px;
+
 }
 
 .card.is-active .card-header {
@@ -120,7 +126,7 @@ body {
   width: 100px;
   height: 100px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+  border-radius: 10px;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
@@ -232,7 +238,7 @@ body {
 .card-buttons {
   display: -webkit-box;
   display: flex;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin-top: auto;
   position: -webkit-sticky;
   position: sticky;
@@ -372,6 +378,17 @@ body {
   margin-top: 16px;
 }
 .card-contact svg {
+  flex-shrink: 0;
+  width: 30px;
+  min-height: 34px;
+  margin-right: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-right: 12px;
+  border-right: 1px solid #dfe2ec;
+}
+
+.card-Capture svg {
   flex-shrink: 0;
   width: 30px;
   min-height: 34px;
